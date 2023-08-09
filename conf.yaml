@@ -1,0 +1,26 @@
+
+scrapeConf:
+  includeRepositories: # Empty arry will include all
+      - "Detection.AlertMerge"
+      - "Detection.AlertExperience"
+      - "Detection.AlertPersistor"
+      - "Detection.AlertStatusPersistor"
+      - "Detection.CyberDataPersistor"
+      - "Detection.DetectionManager"
+      - "Detection.ProfileProcessor.DetectionBased"
+      - "Detection.SecurityObservationRouter"
+      - "Detection.AlertTracking.K8s"
+      - "Detection.ProfileEnricher"
+      - "Detection.GlobalProfileSynchronizer"  
+      - "Detection.GlobalProfileSynchronizer"
+      - "Detection.HourlyCyberDataCurator"
+      - "Detection.ProfileChangesDispatcher"
+      - "Detection.ProfilesToBlobWriter"
+      - "Detection.TimelineExperience"
+      - "Detection.ProfileSnapshotWriter"
+  excludeRepositories:
+    - "NDR.ProfileSnapshotWriter"
+  topContributers: 5 # Default 3
+  output: "table" # json / yaml 
+  
+
